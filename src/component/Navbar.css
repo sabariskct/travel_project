@@ -1,0 +1,45 @@
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #060505;
+    padding: 8px 30px;
+  }
+  .logo img {
+    height: 80px; /* Adjust the height as needed */
+    max-height: 100%; /* Ensure the logo scales proportionally */
+  }
+  .navbar1 ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar1 ul li {
+    margin: 0 15px;
+  }
+  .navbar1 ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+  }
+  .navbar1 ul li a:hover {
+    color: #f0c040;
+  }
+  @media (max-width: 768px) {
+    .navbar1 {
+      flex-direction: column;
+      padding: 8px 15px; /* Adjust padding for smaller screens */
+    }
+    .navbar1 ul {
+      flex-direction: column;
+      margin-top: 10px; /* Adjust spacing for smaller screens */
+    }
+    .navbar1 ul li {
+      margin: 10px 0;
+    }
+    .logo img {
+      height: 60px; /* Adjust for smaller screens */
+    }
+  }

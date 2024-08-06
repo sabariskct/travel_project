@@ -1,0 +1,23 @@
+/* src/animations.css */
+.pour-down-enter {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  
+  .pour-down-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 500ms, transform 500ms;
+  }
+  
+  .pour-down-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .pour-down-exit-active {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 500ms, transform 500ms;
+  }
+  

@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .about-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url("/WhatsApp Image 2024-08-01 at 12.02.32_38adb01a.jpg"); /* Correct path to the image in the public folder */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; /* Ensure text is readable on the background */
+  }
+  
+  .about-header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better text visibility */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .about-section,
+  .values-section,
+  .history-section,
+  .team-section,
+  .faq-section {
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better text visibility */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .about-content {
+    max-width: 400px;
+    margin: 10px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .values-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .value-item {
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .history-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .timeline-item {
+    width: 80%;
+    border-left: 2px solid #fff;
+    padding-left: 20px;
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .timeline-item h3 {
+    margin: 0;
+    color: #fff;
+  }
+  
+  .team-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    max-width: 200px;
+    color: #fff;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .team-member:hover {
+    transform: scale(1.1);
+  }
+  
+  .team-description {
+    display: none;
+    transition: display 0.3s ease-in-out;
+  }
+  
+  .team-member:hover .team-description {
+    display: block;
+  }
+  
+  .social-links a {
+    color: #fff;
+    margin: 0 5px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-links a:hover {
+    color: #ddd;
+  }
+  
+  .faq-section {
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better text visibility */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .faq-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+  
+  .faq-item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .faq-item h3 {
+    margin: 0;
+    color: #fff;
+  }
+  
+  .faq-item p {
+    margin: 0;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .about-footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+  }
+  
+  @media (max-width: 768px) {
+    .about-section,
+    .values-section,
+    .history-section,
+    .team-section,
+    .faq-section {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    .values-grid,
+    .team-grid {
+      flex-direction: column;
+    }
+  
+    .timeline-item {
+      width: 90%;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-out;
+  }

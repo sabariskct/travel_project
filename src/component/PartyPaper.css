@@ -1,0 +1,32 @@
+/* src/partyPaper.css */
+@keyframes partyPaper {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .party-paper-enter {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  
+  .party-paper-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    animation: partyPaper 1s forwards;
+  }
+  
+  .party-paper-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .party-paper-exit-active {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 500ms, transform 500ms;
+  }
+  
